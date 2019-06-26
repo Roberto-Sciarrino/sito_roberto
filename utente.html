@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+<head>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<title>Note Sharing</title>
+</head>
+<body>
+<header>
+<h1 style = "font-size:64px ; text-align:center">NOTE SHARING</h1>
+<br>
+<br>
+<br>
+<h3 style="margin-left:10px">Interfaccia di controllo utente</h3>
+<pre style="margin-left:10px">
+Da qui puoi visualizzare, modificare e caricare
+le tue note premendo gli appositi bottoni
+</pre>
+</header>
+<article id="note">
+<div id="accordion" style="width:500px; margin-left:10px">
+  <div class="card">
+    <div class="card-header" id="headingOne">
+      <h5 class="mb-0">
+        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+         <p id="title"></p>
+        </button>
+      </h5>
+    </div>
+
+    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+      <div class="card-body">
+<div class="container">   
+ 
+	<div class="row">
+    <div class="col">
+        <p id="description"></p>
+		
+    </div>
+    <div class="col">
+    </div>
+    <div class="col">
+      <div class="btn-group-vertical" style="position:relative;left:40px">
+ <a class="btn btn-primary" href="modifica_nota.html" role="button">Modifica</a>
+ <a class="btn btn-primary" href="visualizza_nota.html" role="button">Visualizza</a>
+ <button type="button" class="btn btn-primary">Elimina</button>
+</div>
+    </div>
+  </div>
+      </div>
+    </div>
+  </div>
+</article>
+<div>
+<p style="margin-left:10px" >Per cambiare la password <a href="cambio_password.html">clicca qui</a></p>
+</div> 
+<br>
+<button style="margin-left:10px" type="button" class="btn btn-primary">Inserisci nuova nota</button>
+
+</body>
+</html>

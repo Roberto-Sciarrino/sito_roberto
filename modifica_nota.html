@@ -1,0 +1,76 @@
+<!doctype html>
+
+<html>
+<head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<title>NOTE SHARING</title>
+<style>
+.form-inline
+{
+position:relative;
+top:4px;
+}
+.form-group
+{
+position:relative;
+margin-left:10px;
+margin-right:auto;
+}
+#PDFelimination
+{
+position:relative;
+left:10px
+}
+</style>
+</head>
+<body>
+<h1 style = "font-size:64px ; text-align:center">NOTE SHARING</h1>
+<form>
+<div class="form-group">
+  <label for="title">Titolo nota *</label>
+  <input type="text" class="form-control is-valid" id="title" style="width:auto" required name="title">
+</div>
+<div class="form-group">
+  <label for="description">Descrizione nota *</label>
+  <textarea class="form-control is-valid" rows="20" id="description" required name="description"></textarea>
+</div>
+<div style="position:relative;left:10px">
+<p>Premi "aggiungi PDF" per allegare un nuovo pdf, altrimenti seleziona uno dei pdf allegati nella nota ed eliminalo</p>
+</div>
+<div class="form-inline" style="margin-left:10px">
+<button type="submit" class="btn btn-primary">Allega PDF</button> 
+<input type="file" class="form-control" style="width:auto ; height:auto; position:relative; left:10px"></input>
+</div>
+<br>
+
+<div class="form-inline" style="margin-left:10px">
+<button type="button" class="btn btn-primary">Elimina PDF</button> 
+<input type="text" class="form-control" placeholder="" id="PDFelimination"></input>
+</div>
+
+<br>
+<div style="position:relative;margin-left:10px">
+<p>Premi "aggiungi immagine" per allegare una nuova immagine, altrimenti seleziona una delle immagini allegate nella nota ed eliminala</p>
+</div>
+<div class="form-inline" style="margin-left:10px">
+
+<button type="button" class="btn btn-primary">Allega immagine</button> 
+<input type="file" class="form-control" style="width:auto;height:auto;position:relative;left:10px"></input>
+</div>
+<br>
+<div class="form-inline" style="margin-left:10px">
+<button type="" class="btn btn-primary">Elimina immagine</button> 
+<input type="text" class="form-control" placeholder="" id="PDFelimination"></input>
+</div>
+<br>
+<div style="margin-left:10px">
+<p>Premi conferma per confermare le modifiche</p>
+</div>
+<button style="margin-left:10px" class="btn btn-primary" type="submit" onclick="add()">Conferma</button> 
+</form>
+<br>
+</body>
+</html>
